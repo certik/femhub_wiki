@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+
+= Git repository =
+
+{{{
+git clone git://github.com/certik/femhub.git 
+}}}
+
+
+= Online access =
+
+http://github.com/certik/femhub
