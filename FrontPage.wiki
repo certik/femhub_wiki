@@ -1,0 +1,14 @@
+#summary One-sentence summary of this page.
+
+Finite element distribution.
+
+= Installation =
+
+Download the latest tarball (see featured downloads on the right), unpack.
+{{{
+$ make
+}}}
+Wait about 30 minutes.
+{{{
+$ ./femhub
+}}}
