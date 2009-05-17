@@ -4,11 +4,11 @@ Finite element distribution.
 
 = Installation =
 
-Download the latest tarball (see featured downloads on the right), unpack.
+femhub is in development, so for now, download the latest SPD tarball (see featured downloads on the right of the [http://code.google.com/p/spdproject/ SPD homepage]), unpack.
 {{{
 $ make
 }}}
-Wait about 30 minutes.
+Wait about 10 minutes. Then install the following packages:
 {{{
-$ ./spd
+$ ./spd -i http://femhub.googlecode.com/files/cmake-2.6.2.spkg
 }}}
