@@ -8,10 +8,15 @@ femhub is in development, so for now, download the latest SPD tarball (see featu
 {{{
 $ make
 }}}
-Wait about 10 minutes. Then install the following packages:
+Wait about 13 minutes. Then install the following packages:
 {{{
 $ ./spd -i http://femhub.googlecode.com/files/cmake-2.6.2.spkg
 $ ./spd -i http://femhub.googlecode.com/files/judy-1.0.5.spkg
+$ ./spd -i http://femhub.googlecode.com/files/mesa-7.2.spkg
+$ ./spd -i http://femhub.googlecode.com/files/vtk-cvs-20090316osmesa-2.spkg
+$ ./spd -i http://femhub.googlecode.com/files/configobj-4.5.3.spkg
+$ cp spkg/installed/vtk-cvs-20090316osmesa-2 spkg/installed/vtk-cvs-20090316osmesa
+$ ./spd -i http://femhub.googlecode.com/files/mayavi-3.2.0-osmesa.spkg
 }}}
 On OS X:
 {{{
@@ -52,16 +57,7 @@ Out[2]: True
 }}}
 You can ignore those debugging print statements "Assembling stiffness matrix..." (they should be silenced in the C++ hermes2d). 
 
-Then install the following packages:
-{{{
-./spd -i http://femhub.googlecode.com/files/mesa-7.2.spkg
-./spd -i http://femhub.googlecode.com/files/vtk-cvs-20090316osmesa-2.spkg
-./spd -i http://femhub.googlecode.com/files/configobj-4.5.3.spkg
-cp spkg/installed/vtk-cvs-20090316osmesa-2 spkg/installed/vtk-cvs-20090316osmesa
-./spd -i http://femhub.googlecode.com/files/mayavi-3.2.0-osmesa.spkg
-}}}
-
-Now the mayavi should work in the notebook too. You can test just mayavi by:
+You can also test mayavi:
 
 {{{
 $ ./spd 
