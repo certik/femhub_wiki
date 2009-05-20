@@ -55,7 +55,7 @@ You can ignore those debugging print statements "Assembling stiffness matrix..."
 Then install the following packages:
 {{{
 ./spd -i http://femhub.googlecode.com/files/mesa-7.2.spkg
-./spd -i http://femhub.googlecode.com/files/vtk-cvs-20090316osmesa.spkg
+./spd -i http://femhub.googlecode.com/files/vtk-cvs-20090316osmesa-2.spkg
 ./spd -i http://femhub.googlecode.com/files/configobj-4.5.3.spkg
 ./spd -i http://femhub.googlecode.com/files/mayavi-3.2.0.osmesa.spkg
 }}}
