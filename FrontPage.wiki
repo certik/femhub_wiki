@@ -26,6 +26,56 @@ Everywhere else:
 {{{
 $ ./spd -i http://femhub.googlecode.com/files/hermes2d-6ccc852.spkg
 }}}
+
+Now test hermes2d+mayavi output in the notebook. Do:
+{{{
+$ ./spd 
+---------------------------------------------------------------------------
+| Source Python Distribution, Version 3.4.2spd3, Release Date: 2009-05-20 |
+| Type notebook() for the GUI, and license() for information.             |
+---------------------------------------------------------------------------
+In [1]: notebook()
+}}}
+create a new worksheet and type this in:
+{{{
+from hermes2d import Mesh, H1Shapeset, PrecalcShapeset, H1Space, \
+       WeakForm, Solution, ScalarView, LinSystem, DummySolver
+from hermes2d.forms import set_forms
+from hermes2d.examples import get_example_mesh
+
+mesh = Mesh()
+mesh.load(get_example_mesh())
+mesh.refine_element(0)
+shapeset = H1Shapeset()
+pss = PrecalcShapeset(shapeset)
+
+# create an H1 space
+space = H1Space(mesh, shapeset)
+space.set_uniform_order(5)
+space.assign_dofs()
+
+# initialize the discrete problem
+wf = WeakForm(1)
+set_forms(wf)
+solver = DummySolver()
+sys = LinSystem(wf, solver)
+sys.set_spaces(space)
+sys.set_pss(pss)
+
+# assemble the stiffness matrix and solve the system
+sys.assemble()
+A = sys.get_matrix()
+b = sys.get_rhs()
+from scipy.linalg import cg
+x, res = cg(A, b)
+sln = Solution()
+sln.set_fe_solution(space, pss, x)
+
+view = ScalarView("Solution")
+view.show(sln, lib="mayavi", notebook=True)
+}}}
+
+
 When it installs, run the tests to see if everything works:
 {{{
 $ ./spd 
