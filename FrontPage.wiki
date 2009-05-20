@@ -19,3 +19,5 @@ $ ./spd -i http://femhub.googlecode.com/files/judy-1.0.5.spkg
 Patches waiting for review: http://code.google.com/p/femhub/issues/list?q=label:NeedsReview
 
 Nice project ideas: http://code.google.com/p/femhub/issues/list?q=label:ProjectIdea
+
+hermes2d issues: http://code.google.com/p/femhub/issues/list?q=label:hermes2d
