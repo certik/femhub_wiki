@@ -64,15 +64,21 @@ cp spkg/installed/vtk-cvs-20090316osmesa-2 spkg/installed/vtk-cvs-20090316osmesa
 Now the mayavi should work in the notebook too. You can test just mayavi by:
 
 {{{
-sage: from enthought.mayavi import mlab as M
-sage: M.options.offscreen = True
-sage: M.test_mesh()
-<enthought.mayavi.modules.surface.Surface object at 0x7fd8830>
-sage: M.axes()
-<enthought.mayavi.modules.axes.Axes object at 0x4f9c6b0>
-sage: M.title("Mesh")
-<enthought.mayavi.modules.text.Text object at 0x9ffbe90>
-sage: M.savefig("mesh.png")
+$ ./spd 
+---------------------------------------------------------------------------
+| Source Python Distribution, Version 3.4.2spd3, Release Date: 2009-05-20 |
+| Type notebook() for the GUI, and license() for information.             |
+---------------------------------------------------------------------------
+In [1]: from enthought.mayavi import mlab as M
+In [2]: M.options.offscreen = True
+In [3]: M.test_mesh()
+Out[3]: <enthought.mayavi.modules.surface.Surface object at 0x528fa10>
+In [4]: M.axes()
+Out[4]: <enthought.mayavi.modules.axes.Axes object at 0x72a6b90>
+In [5]: M.title("Mesh")
+Out[5]: <enthought.mayavi.modules.text.Text object at 0x72b4d70>
+In [6]: M.savefig("mesh.png")
+In [7]: 
 }}}
 
 = Development =
