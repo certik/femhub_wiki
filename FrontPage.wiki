@@ -13,9 +13,9 @@ Wait about 13 minutes. Then install the following packages:
 $ ./spd -i http://femhub.googlecode.com/files/cmake-2.6.2.spkg
 $ ./spd -i http://femhub.googlecode.com/files/judy-1.0.5.spkg
 $ ./spd -i http://femhub.googlecode.com/files/mesa-7.2.spkg
-$ ./spd -i http://femhub.googlecode.com/files/vtk-cvs-20090316osmesa-2.spkg
+$ ./spd -i http://femhub.googlecode.com/files/vtk-cvs-20090316-minimal.spkg
 $ ./spd -i http://femhub.googlecode.com/files/configobj-4.5.3.spkg
-$ cp spkg/installed/vtk-cvs-20090316osmesa-2 spkg/installed/vtk-cvs-20090316osmesa
+$ cp spkg/installed/vtk-cvs-20090316-minimal spkg/installed/vtk-cvs-20090316osmesa
 $ ./spd -i http://femhub.googlecode.com/files/mayavi-3.2.0-osmesa.spkg
 }}}
 On OS X:
