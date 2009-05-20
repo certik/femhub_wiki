@@ -13,7 +13,7 @@ Wait about 10 minutes. Then install the following packages:
 $ ./spd -i cython-0.11.1.p0
 $ ./spd -i http://femhub.googlecode.com/files/cmake-2.6.2.spkg
 $ ./spd -i http://femhub.googlecode.com/files/judy-1.0.5.spkg
-$ ./spd -i http://femhub.googlecode.com/files/hermes2d-e4527cb.spkg
+$ ./spd -i http://femhub.googlecode.com/files/hermes2d-6ccc852.spkg
 }}}
 
 = Development =
