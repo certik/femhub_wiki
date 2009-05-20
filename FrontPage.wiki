@@ -13,3 +13,9 @@ Wait about 10 minutes. Then install the following packages:
 $ ./spd -i http://femhub.googlecode.com/files/cmake-2.6.2.spkg
 $ ./spd -i http://femhub.googlecode.com/files/judy-1.0.5.spkg
 }}}
+
+= Development =
+
+Patches waiting for review: http://code.google.com/p/femhub/issues/list?q=label:NeedsReview
+
+Nice project ideas: http://code.google.com/p/femhub/issues/list?q=label:ProjectIdea
