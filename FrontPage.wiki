@@ -60,7 +60,19 @@ Then install the following packages:
 ./spd -i http://femhub.googlecode.com/files/mayavi-3.2.0.osmesa.spkg
 }}}
 
-Now the mayavi should work in the notebook too.
+Now the mayavi should work in the notebook too. You can test just mayavi by:
+
+{{{
+sage: from enthought.mayavi import mlab as M
+sage: M.options.offscreen = True
+sage: M.test_mesh()
+<enthought.mayavi.modules.surface.Surface object at 0x7fd8830>
+sage: M.axes()
+<enthought.mayavi.modules.axes.Axes object at 0x4f9c6b0>
+sage: M.title("Mesh")
+<enthought.mayavi.modules.text.Text object at 0x9ffbe90>
+sage: M.savefig("mesh.png")
+}}}
 
 = Development =
 
