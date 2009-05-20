@@ -51,7 +51,7 @@ tests/test_plots.py[1] Assembling stiffness matrix...
 ================== tests finished: 11 passed in 1.13 seconds ===================
 Out[2]: True
 }}}
-You can ignore those debugging print statements "Assembling stiffness matrix..." (they should be silenced in the C++ hermes2d).
+You can ignore those debugging print statements "Assembling stiffness matrix..." (they should be silenced in the C++ hermes2d). Now it should work and you can use it in the notebook too.
 
 = Development =
 
