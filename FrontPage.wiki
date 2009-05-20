@@ -13,8 +13,45 @@ Wait about 10 minutes. Then install the following packages:
 $ ./spd -i cython-0.11.1.p0
 $ ./spd -i http://femhub.googlecode.com/files/cmake-2.6.2.spkg
 $ ./spd -i http://femhub.googlecode.com/files/judy-1.0.5.spkg
+}}}
+On OS X:
+{{{
 $ ./spd -i http://femhub.googlecode.com/files/hermes2d-e85b61b.spkg
 }}}
+Everywhere else:
+{{{
+$ ./spd -i http://femhub.googlecode.com/files/hermes2d-6ccc852.spkg
+}}}
+When it installs, run the tests to see if everything works:
+{{{
+$ ./spd 
+---------------------------------------------------------------------------
+| Source Python Distribution, Version 3.4.2spd2, Release Date: 2009-05-15 |
+| Type notebook() for the GUI, and license() for information.             |
+---------------------------------------------------------------------------
+In [1]: import hermes2d
+In [2]: hermes2d.test()
+============================= test process starts ==============================
+executable:   /home/ondrej/ext/spd-3.4.2spd2-ubuntu-64bit/local/bin/sage.bin  (2.5.2-final-0)
+
+tests/test_basics.py[2] Assembling stiffness matrix...
+..                                                  [OK]
+tests/test_examples.py[8] ..Assembling stiffness matrix...
+.Assembling stiffness matrix...
+.Assembling stiffness matrix...
+.Assembling stiffness matrix...
+.Assembling stiffness matrix...
+.Assembling stiffness matrix...
+Assembling stiffness matrix...
+Assembling stiffness matrix...
+.                                          [OK]
+tests/test_plots.py[1] Assembling stiffness matrix...
+.                                                    [OK]
+
+================== tests finished: 11 passed in 1.13 seconds ===================
+Out[2]: True
+}}}
+You can ignore those debugging print statements "Assembling stiffness matrix..." (they should be silenced in the C++ hermes2d).
 
 = Development =
 
