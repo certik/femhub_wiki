@@ -21,7 +21,7 @@ pb, vec, data = pde_solve('/home/share/software/packages/spd-3.4.2spd3/local/sha
 
 result_name = pb.get_output_name()
 print result_name
-view = Viewer(result_name)
+view = Viewer(result_name, offscreen=True)
 view(show=False)
 }}}
 note: the poisson.py path has to be fixed according to your installation!
