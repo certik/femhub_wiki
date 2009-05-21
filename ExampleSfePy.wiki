@@ -1,5 +1,7 @@
 #summary How to use SfePy in femhub.
 
+*warning*: do not try the following with "big" examples (e.g. navier_stokes.py), as umfpack is not yet in SPD and scipy's superlu takes forever...
+
 run spd
 {{{
 $ ./spd 
