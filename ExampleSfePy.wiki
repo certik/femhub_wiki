@@ -18,8 +18,9 @@ import sfepy
 sfepy.__version__
 from sfepy.interactive import *
 from sfepy.postprocess import Viewer
+from sage.misc.misc import SAGE_LOCAL
 
-pb, vec, data = pde_solve('/home/share/software/packages/spd-3.4.2spd3/local/share/sfepy/input/poisson.py')
+pb, vec, data = pde_solve(SAGE_LOCAL+'/share/sfepy/input/poisson.py')
 
 result_name = pb.get_output_name()
 print result_name
