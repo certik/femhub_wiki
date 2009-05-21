@@ -1,0 +1,78 @@
+#summary How to use SfePy in femhub.
+
+run spd
+{{{
+$ ./spd 
+---------------------------------------------------------------------------
+| Source Python Distribution, Version 3.4.2spd3, Release Date: 2009-05-20 |
+| Type notebook() for the GUI, and license() for information.             |
+---------------------------------------------------------------------------
+In [1]: notebook()
+}}}
+
+create a new worksheet and type the following in one cell: 
+{{{
+import sfepy
+sfepy.__version__
+from sfepy.interactive import *
+from sfepy.postprocess import Viewer
+
+pb, vec, data = pde_solve('/home/share/software/packages/spd-3.4.2spd3/local/share/sfepy/input/poisson.py')
+
+result_name = pb.get_output_name()
+print result_name
+view = Viewer(result_name)
+view(show=False)
+}}}
+note: the poisson.py path has to be fixed according to your installation!
+
+evaluate, then you should see
+{{{
+sfepy: left over: ['__builtins__', '__file__', '__name__', '_filename',
+'__doc__']
+sfepy: reading mesh
+(/home/share/software/packages/spd-3.4.2spd3/local/share/sfepy/database/\
+simple.mesh)...
+sfepy: ...done in 0.02 s
+sfepy: setting up domain edges...
+sfepy: ...done in 0.01 s
+sfepy: setting up domain faces...
+sfepy: ...done in 0.02 s
+sfepy: creating regions...
+sfepy:     leaf Gamma_Right region_Gamma_Right
+sfepy:     leaf Omega region_Omega
+sfepy:     leaf Gamma_Left region_Gamma_Left
+sfepy: ...done in 0.02 s
+sfepy: equation "Temperature":
+sfepy: dw_laplace.i1.Omega( coef.val, s, t ) = 0
+sfepy: setting up dof connectivities...
+sfepy: ...done in 0.00 s
+sfepy: describing geometries...
+sfepy: ...done in 0.00 s
+sfepy: using solvers:
+               nls: newton
+                ls: ls
+sfepy: matrix shape: (300, 300)
+sfepy: assembling matrix graph...
+sfepy: ...done in 0.00 s
+sfepy: matrix structural nonzeros: 3538 (3.93e-02% fill)
+sfepy: updating materials...
+sfepy:     coef
+sfepy: ...done in 0.00 s
+sfepy: nls: iter: 0, residual: 1.176265e-01 (rel: 1.000000e+00)
+Use minimum degree ordering on A'+A.
+sfepy:   rezidual:    0.00 [s]
+sfepy:      solve:    0.03 [s]
+sfepy:     matrix:    0.00 [s]
+sfepy: nls: iter: 1, residual: 2.644344e-16 (rel: 2.248084e-15)
+./simple.vtk
+sfepy: ['t']
+sfepy: []
+sfepy: scalar t [  1.22460595e-18  -1.00000001e-01   0.00000000e+00]
+}}}
+
+[http://femhub.googlecode.com/svn/web/examples/poisson.png]
+
+input/piezo.py should display:
+
+[http://femhub.googlecode.com/svn/web/examples/piezo.png]
