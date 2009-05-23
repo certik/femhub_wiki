@@ -1,7 +1,9 @@
 #summary Shapesets summary in hermes2d
 
-|| || Triangles || Quads ||
-|| H1 || shapeset_h1_beuchler.cpp, shapeset_h1_ortho.cpp || shapeset_h1_quad.cpp, shapeset_h1_eigen.cpp ||
-|| Hcurl || shapeset_hc_legendre.cpp, shapeset_hc_gradleg.cpp || shapeset_hc_eigen2.cpp, shapeset_hc_gradeigen.cpp ||
-|| Hdiv || || shapeset_hd_legendre.cpp ||
-|| L2 || || ||
+
+
+|| || *Triangles* || *Quads* ||
+|| *H1* || shapeset_h1_beuchler.cpp, shapeset_h1_ortho.cpp || shapeset_h1_quad.cpp, shapeset_h1_eigen.cpp ||
+|| *Hcurl* || shapeset_hc_legendre.cpp, shapeset_hc_gradleg.cpp || shapeset_hc_eigen2.cpp, shapeset_hc_gradeigen.cpp ||
+|| *Hdiv* || || shapeset_hd_legendre.cpp ||
+|| *L2* || || ||
