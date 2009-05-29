@@ -26,7 +26,7 @@ $ ./spd -i http://femhub.googlecode.com/files/hermes2d-e85b61b.spkg
 }}}
 Everywhere else:
 {{{
-$ ./spd -i http://femhub.googlecode.com/files/hermes2d-6ccc852.spkg
+$ ./spd -i http://femhub.googlecode.com/files/hermes2d-71f6dfc.spkg
 }}}
 
 Now test hermes2d+mayavi output in the notebook. Do:
