@@ -1,0 +1,7 @@
+#summary This page is for testing purposes
+
+= MHD =
+
+My first try using matplotlib:
+
+<wiki:video url="http://www.youtube.com/watch?v=PsuK1BgnorU"/>
