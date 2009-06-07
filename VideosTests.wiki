@@ -6,7 +6,7 @@ My first try using matplotlib:
 
 <wiki:video url="http://www.youtube.com/watch?v=PsuK1BgnorU"/>
 
-= SymPy =
+= !SymPy =
 
 Simple `isympy` demo:
 
