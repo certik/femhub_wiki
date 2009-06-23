@@ -1,5 +1,11 @@
 #summary How to create femhub
 
 {{{
-git clone git://github.com/certik/spd.git femhub
+git clone git://github.com/certik/femhub.git
+cd femhub
+git co -b femhub origin/femhub
+cd spkg/standard/
+./download_packages
+cd ../..
+cp -a femhub spd-3.4.2femhub1
 }}}
