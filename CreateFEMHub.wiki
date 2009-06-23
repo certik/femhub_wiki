@@ -1,0 +1,5 @@
+#summary How to create femhub
+
+{{{
+git clone git://github.com/certik/spd.git femhub
+}}}
