@@ -6,6 +6,6 @@ cd femhub
 git co -b femhub origin/femhub
 cd spkg/standard/
 ./download_packages
-cd ../..
+cd ../../..
 cp -a femhub spd-3.4.2femhub1
 }}}
