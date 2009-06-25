@@ -27,7 +27,7 @@ git tag femhub-0.9.1
 git push --tags git@github.com:certik/femhub.git
 cd ../../..
 cp -a femhub femhub-0.9.1
-tar cf femhub-0.9.1 femhub-0.9.1.tar
+tar cf femhub-0.9.1.tar femhub-0.9.1
 }}}
 
 == binary distribution ==
