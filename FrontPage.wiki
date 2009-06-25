@@ -11,7 +11,7 @@ $ tar xf femhub-3.4.2spd3femhub1.tar
 $ cd femhub-3.4.2spd3femhub1
 $ make
 }}}
-Wait between 37 minutes to 2 hours (depends how fast is your computer). That's it.
+Depending on the speed of your computer, wait between 37 minutes to 2 hours. That's it.
 
 Now test hermes2d+mayavi output in the notebook. Do:
 {{{
