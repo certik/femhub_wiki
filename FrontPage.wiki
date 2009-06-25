@@ -69,33 +69,22 @@ See ExampleSfePy for an example how to run !SfePy.
 You can run tests to see if everything works:
 {{{
 $ ./spd 
----------------------------------------------------------------------------
-| Source Python Distribution, Version 3.4.2spd2, Release Date: 2009-05-15 |
-| Type notebook() for the GUI, and license() for information.             |
----------------------------------------------------------------------------
+--------------------------------------------------------------
+| Femhub, Version 3.4.2spd3femhub1, Release Date: 2009-05-20 |
+| Type notebook() for the GUI.                               |
+--------------------------------------------------------------
 In [1]: import hermes2d
 In [2]: hermes2d.test()
 ============================= test process starts ==============================
-executable:   /home/ondrej/ext/spd-3.4.2spd2-ubuntu-64bit/local/bin/sage.bin  (2.5.2-final-0)
+executable:   /home/ondrej/repos/femhub-3.4.2spd3femhub1-ubuntu64/local/bin/sage.bin  (2.5.4-final-0)
 
-tests/test_basics.py[2] Assembling stiffness matrix...
-..                                                  [OK]
-tests/test_examples.py[8] ..Assembling stiffness matrix...
-.Assembling stiffness matrix...
-.Assembling stiffness matrix...
-.Assembling stiffness matrix...
-.Assembling stiffness matrix...
-.Assembling stiffness matrix...
-Assembling stiffness matrix...
-Assembling stiffness matrix...
-.                                          [OK]
-tests/test_plots.py[1] Assembling stiffness matrix...
-.                                                    [OK]
+tests/test_basics.py[2] ..                                                  [OK]
+tests/test_examples.py[8] ........                                          [OK]
+tests/test_plots.py[2] ..                                                   [OK]
 
-================== tests finished: 11 passed in 1.13 seconds ===================
+================== tests finished: 12 passed in 1.48 seconds ===================
 Out[2]: True
 }}}
-You can ignore those debugging print statements "Assembling stiffness matrix..." (they should be silenced in the C++ hermes2d). 
 
 You can also test mayavi:
 {{{
