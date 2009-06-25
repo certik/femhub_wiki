@@ -4,30 +4,14 @@ Finite element distribution.
 
 = Installation =
 
-femhub is in development, so for now, download the latest SPD tarball (see featured downloads on the right of the [http://code.google.com/p/spdproject/ SPD homepage]), unpack.
+Download, unpack, build:
 {{{
+$ wget http://sage.math.washington.edu/home/ondrej/scratch/femhub/femhub-3.4.2spd3femhub1.tar
+$ tar xf femhub-3.4.2spd3femhub1.tar
+$ cd femhub-3.4.2spd3femhub1
 $ make
 }}}
-Wait about 13 minutes. Then install the following packages:
-{{{
-$ ./spd -i http://femhub.googlecode.com/files/cmake-2.6.2.spkg
-$ ./spd -i http://femhub.googlecode.com/files/judy-1.0.5.spkg
-$ ./spd -i http://femhub.googlecode.com/files/mesa-7.2.spkg
-$ ./spd -i http://femhub.googlecode.com/files/vtk-cvs-20090316-minimal.spkg
-$ ./spd -i http://femhub.googlecode.com/files/configobj-4.5.3.spkg
-$ touch spkg/installed/vtk-cvs-20090316osmesa
-$ ./spd -i http://femhub.googlecode.com/files/mayavi-3.2.0-osmesa.spkg
-$ ./spd -i http://femhub.googlecode.com/files/pyparsing-1.5.2.spkg
-$ ./spd -i http://femhub.googlecode.com/files/sfepy-2009.2.spkg
-}}}
-On OS X:
-{{{
-$ ./spd -i http://femhub.googlecode.com/files/hermes2d-e85b61b.spkg
-}}}
-Everywhere else:
-{{{
-$ ./spd -i http://femhub.googlecode.com/files/hermes2d-71f6dfc.spkg
-}}}
+Wait about 40 minutes. Then install the following packages:
 
 Now test hermes2d+mayavi output in the notebook. Do:
 {{{
