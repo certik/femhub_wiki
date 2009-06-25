@@ -11,7 +11,7 @@ $ tar xf femhub-3.4.2spd3femhub1.tar
 $ cd femhub-3.4.2spd3femhub1
 $ make
 }}}
-Wait about 40 minutes. Then install the following packages:
+Wait about 40 minutes. That's it.
 
 Now test hermes2d+mayavi output in the notebook. Do:
 {{{
