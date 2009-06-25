@@ -13,6 +13,30 @@ cp -a femhub femhub-3.4.2spd3femhub1
 tar cf femhub-3.4.2spd3femhub1 femhub-3.4.2spd3femhub1.tar
 }}}
 
+== new release ==
+
+{{{
+git clone git://github.com/certik/femhub.git
+cd femhub
+git co -b femhub origin/femhub
+cd spkg/standard/
+./download_packages
+vim sage_scripts/sage-banner  # edit the version & date in the banner
+git ci -a -m "Femhub version bumped to 0.9.1"
+git tag femhub-0.9.1
+git push --tags git@github.com:certik/femhub.git
+cd ../../..
+cp -a femhub femhub-0.9.1
+tar cf femhub-0.9.1 femhub-0.9.1.tar
+}}}
+
 == binary distribution ==
 
-Just compile it (make) and tar.gz it.
+Unpack it, move it to `femhub-0.9.1-ubuntu64`, change the platform name to one of: 
+  * `ubuntu32`
+  * `ubuntu64`
+  * `debian32`
+  * `debian64`
+  * `gentoo64`
+  * ...
+then go into the directory, build it (just do `make`) and `tar.gz` it.
