@@ -1,5 +1,7 @@
 #summary How to create femhub
 
+== source distribution ==
+
 {{{
 git clone git://github.com/certik/femhub.git
 cd femhub
@@ -7,5 +9,10 @@ git co -b femhub origin/femhub
 cd spkg/standard/
 ./download_packages
 cd ../../..
-cp -a femhub spd-3.4.2femhub1
+cp -a femhub femhub-3.4.2spd3femhub1
+tar cf femhub-3.4.2spd3femhub1 femhub-3.4.2spd3femhub1.tar
 }}}
+
+== binary distribution ==
+
+Just compile it (make) and tar.gz it.
