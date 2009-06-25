@@ -16,10 +16,10 @@ Wait about 40 minutes. That's it.
 Now test hermes2d+mayavi output in the notebook. Do:
 {{{
 $ ./spd 
----------------------------------------------------------------------------
-| Source Python Distribution, Version 3.4.2spd3, Release Date: 2009-05-20 |
-| Type notebook() for the GUI, and license() for information.             |
----------------------------------------------------------------------------
+--------------------------------------------------------------
+| Femhub, Version 3.4.2spd3femhub1, Release Date: 2009-05-20 |
+| Type notebook() for the GUI.                               |
+--------------------------------------------------------------
 In [1]: notebook()
 }}}
 create a new worksheet and type the following in one cell:
