@@ -11,7 +11,7 @@ $ tar xf femhub-3.4.2spd3femhub1.tar
 $ cd femhub-3.4.2spd3femhub1
 $ make
 }}}
-Depending on the speed of your computer, wait between 37 minutes to 1.5 hour. That's it.
+Depending on the speed of your computer, wait between 37 minutes to 1.5 hour. That's it. If you want, you can also download a binary from http://sage.math.washington.edu/home/ondrej/scratch/femhub/, however, if it doesn't work for you, compile from source, that should always work (if not, please report a bug).
 
 Now test hermes2d+mayavi output in the notebook. Do:
 {{{
