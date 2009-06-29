@@ -1,7 +1,5 @@
 #summary One-sentence summary of this page.
 
-Finite element distribution.
-
 *Main web page*: http://femhub.org/
 
 This site is used for development.
