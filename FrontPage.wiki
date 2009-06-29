@@ -2,6 +2,10 @@
 
 Finite element distribution.
 
+*Main web page*: http://femhub.org/
+
+This site is used for development.
+
 = News =
 
   * *28 June 2009* Femhub 0.9.3 released ([http://groups.google.com/group/femhub/browse_thread/thread/3a7b13282c7fc9d0 release notes])
