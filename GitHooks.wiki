@@ -1,0 +1,22 @@
+#summary One-sentence summary of this page.
+
+= To automatically update the pages =
+
+Append this to `hooks/post-receive` and `chmod +x` it.
+
+{{{
+echo "running post-receive hook..."
+while read oldrev newrev refname
+do
+    echo "params: $oldrev $newrev $refname"
+    if [ "$refname" = "refs/heads/gh-pages" ]; then
+        echo "gh-pages branch updated, regenerating pages..."
+        rm -rf /home/git/web/femhub.org
+        mkdir /home/git/web/femhub.org
+        if [ "$newrev" != "0000000000000000000000000000000000000000" ]; then
+            git archive "$newrev" | tar -xC /home/git/web/femhub.org
+        fi
+    fi
+done
+echo "done."
+}}}
