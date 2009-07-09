@@ -6,6 +6,10 @@ My first try using matplotlib:
 
 <wiki:video url="http://www.youtube.com/watch?v=PsuK1BgnorU"/>
 
+and visit:
+
+<wiki:video url="http://www.youtube.com/watch?v=D0vqFHg2Fnk"/>
+
 = !SymPy =
 
 Simple `isympy` demo:
