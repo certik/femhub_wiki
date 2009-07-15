@@ -38,5 +38,6 @@ Unpack it, move it to `femhub-0.9.1-ubuntu64`, change the platform name to one o
   * `debian32`
   * `debian64`
   * `gentoo64`
+  * `OSX`
   * ...
 then go into the directory, build it (just do `make`) and `tar.gz` it.
