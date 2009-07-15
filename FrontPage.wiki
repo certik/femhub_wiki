@@ -72,6 +72,10 @@ sln.set_fe_solution(space, pss, x)
 view = ScalarView("Solution")
 view.show(sln, lib="mayavi", notebook=True)
 }}}
+If you are on Mac, change the last line to (mayavi doesn't yet work on Mac, [http://code.google.com/p/femhub/issues/detail?id=34 issue 34]):
+{{{
+view.show(sln, lib="mpl", notebook=True)
+}}}
 when you evaluate the cell, you should see:
 
 http://femhub.googlecode.com/files/hermes2d-mayavi2-notebook.png
