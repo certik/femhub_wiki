@@ -1,13 +1,13 @@
 #summary How to install SPD on the server
 
-= Install SPD notebook =
+= Install FEMhub notebook =
 
 Do all of the below as the user `ondrej`, that will run the notebook server. Create an nbuser user that will run the actual worksheets:
 {{{
 $ sudo adduser nbuser
 $ sudo addgroup sageusers
-$ sudo adduser ondrej sageusers
-$ sudo adduser nbuser sageusers
+$ sudo adduser ondrej femhubusers
+$ sudo adduser nbuser femhubusers
 }}}
 Setup ssh keys, so that you can do `ssh nbuser@localhost` without a password. Create a working directory:
 {{{
