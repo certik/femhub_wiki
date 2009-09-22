@@ -5,7 +5,7 @@
 Do all of the below as the user `ondrej`, that will run the notebook server. Create an nbuser user that will run the actual worksheets:
 {{{
 $ sudo adduser nbuser
-$ sudo addgroup sageusers
+$ sudo addgroup femhubusers
 $ sudo adduser ondrej femhubusers
 $ sudo adduser nbuser femhubusers
 }}}
