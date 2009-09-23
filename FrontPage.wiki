@@ -86,39 +86,40 @@ See ExampleSfePy for an example how to run !SfePy.
 
 You can run tests to see if everything works:
 {{{
-$ ./spd 
---------------------------------------------------------------
-| Femhub, Version 3.4.2spd3femhub1, Release Date: 2009-05-20 |
-| Type notebook() for the GUI.                               |
---------------------------------------------------------------
+$ ./femhub 
+----------------------------------------------------------------------
+| FEMhub Version 0.9.7, Release Date: 2009-09-23                     |
+| Type notebook() for the GUI.                                       |
+----------------------------------------------------------------------
 In [1]: import hermes2d
 In [2]: hermes2d.test()
 ============================= test process starts ==============================
-executable:   /home/ondrej/repos/femhub-3.4.2spd3femhub1-ubuntu64/local/bin/sage.bin  (2.5.4-final-0)
+executable:   /home/ondrej/ext/femhub-0.9.7-ubuntu64/local/bin/python  (2.6.2-final-0)
 
 tests/test_basics.py[2] ..                                                  [OK]
 tests/test_examples.py[8] ........                                          [OK]
-tests/test_plots.py[2] ..                                                   [OK]
+tests/test_mesh.py[11] ...........                                          [OK]
+tests/test_plots.py[11] ...........                                         [OK]
 
-================== tests finished: 12 passed in 1.48 seconds ===================
+================== tests finished: 32 passed in 4.05 seconds ===================
 Out[2]: True
 }}}
 
 You can also test mayavi:
 {{{
-$ ./spd 
----------------------------------------------------------------------------
-| Source Python Distribution, Version 3.4.2spd3, Release Date: 2009-05-20 |
-| Type notebook() for the GUI, and license() for information.             |
----------------------------------------------------------------------------
+$ ./femhub 
+----------------------------------------------------------------------
+| FEMhub Version 0.9.7, Release Date: 2009-09-23                     |
+| Type notebook() for the GUI.                                       |
+----------------------------------------------------------------------
 In [1]: from enthought.mayavi import mlab as M
 In [2]: M.options.offscreen = True
 In [3]: M.test_mesh()
-Out[3]: <enthought.mayavi.modules.surface.Surface object at 0x528fa10>
+Out[3]: <enthought.mayavi.modules.surface.Surface object at 0x989d7d0>
 In [4]: M.axes()
-Out[4]: <enthought.mayavi.modules.axes.Axes object at 0x72a6b90>
+Out[4]: <enthought.mayavi.modules.axes.Axes object at 0x9968590>
 In [5]: M.title("Mesh")
-Out[5]: <enthought.mayavi.modules.text.Text object at 0x72b4d70>
+Out[5]: <enthought.mayavi.modules.text.Text object at 0x9988bf0>
 In [6]: M.savefig("mesh.png")
 In [7]: 
 }}}
