@@ -10,7 +10,7 @@ cd spkg/standard/
 vim sage_scripts/sage-banner  # edit the version & date in the banner
 git ci -a -m "FEMhub version bumped to 0.9.1"
 git tag femhub-0.9.1
-git push --tags git@github.com:certik/femhub.git femhub
+git push --tags git@github.com:certik/femhub.git master
 cd ../../..
 cp -a femhub femhub-0.9.1
 tar cf femhub-0.9.1.tar femhub-0.9.1
