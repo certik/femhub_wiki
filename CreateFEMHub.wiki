@@ -1,28 +1,14 @@
 #summary How to create femhub
 
-== source distribution ==
+== new FEMhub release ==
 
 {{{
 git clone git://github.com/certik/femhub.git
 cd femhub
-git co -b femhub origin/femhub
-cd spkg/standard/
-./download_packages
-cd ../../..
-cp -a femhub femhub-3.4.2spd3femhub1
-tar cf femhub-3.4.2spd3femhub1 femhub-3.4.2spd3femhub1.tar
-}}}
-
-== new release ==
-
-{{{
-git clone git://github.com/certik/femhub.git
-cd femhub
-git co -b femhub origin/femhub
 cd spkg/standard/
 ./download_packages
 vim sage_scripts/sage-banner  # edit the version & date in the banner
-git ci -a -m "Femhub version bumped to 0.9.1"
+git ci -a -m "FEMhub version bumped to 0.9.1"
 git tag femhub-0.9.1
 git push --tags git@github.com:certik/femhub.git femhub
 cd ../../..
