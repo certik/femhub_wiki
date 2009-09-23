@@ -6,7 +6,7 @@ This site is used for development.
 
 = News =
 
-  * *23 September 2009* Femhub 0.9.7 released ([http://groups.google.com/group/femhub/browse_thread/thread/ release notes])
+  * *23 September 2009* Femhub 0.9.7 released ([http://groups.google.com/group/femhub/browse_thread/thread/f1f094381f225da7 release notes])
   * *30 July 2009* Femhub 0.9.6 released ([http://groups.google.com/group/femhub/browse_thread/thread/194b4304eacac33b release notes])
   * *14 July 2009* Femhub 0.9.5 released ([http://groups.google.com/group/femhub/browse_thread/thread/24921a3952006e84 release notes])
   * *29 June 2009* Femhub 0.9.4 released ([http://groups.google.com/group/femhub/browse_thread/thread/327e7bb5e6970d53 release notes])
