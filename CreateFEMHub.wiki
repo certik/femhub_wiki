@@ -27,3 +27,13 @@ Unpack it, move it to `femhub-0.9.1-ubuntu64`, change the platform name to one o
   * `OSX`
   * ...
 then go into the directory, build it (just do `make`) and `tar.gz` it.
+
+=== windows ===
+
+In cygwin, do:
+{{{
+make
+local/bin/sage-win-copy
+}}}
+
+and run femhub by double-clicking on the ``femhub-windows`` (bat) file in the root directory.
