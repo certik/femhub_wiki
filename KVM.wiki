@@ -68,6 +68,10 @@ Connect to it:
 virt-viewer -c qemu:///system hardy
 }}}
 
+More info at
+
+https://help.ubuntu.com/community/KVM/Managing
+
 == Utils ==
 
 {{{
