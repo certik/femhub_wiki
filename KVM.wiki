@@ -63,6 +63,11 @@ Name                 State      Autostart
 default              active     yes       
 }}}
 
+Connect to it:
+{{{
+virt-viewer -c qemu:///system hardy
+}}}
+
 == Utils ==
 
 {{{
