@@ -43,6 +43,11 @@ Traceback (most recent call last):
 libvirt.libvirtError: internal error no supported architecture for os type 'hvm'
 }}}
 
+Create the image
+{{{
+sudo virt-install --connect qemu:///system -n hardy -r 512 -f hardy.qcow2 -s 12 -c /home/ondrej/ext/ubuntu-9.10-rc-server-i386.iso --vnc --noautoconsole --os-type linux --os-variant ubuntuHardy --accelerate --network=network:default
+}}}
+
 == Utils ==
 
 {{{
