@@ -1,17 +1,8 @@
 #summary How to install virtualbox
 
-Note: see also: DanDrake/JustEnoughSageServer
-
-You need a recent virtualbox, or the (proprietary) server version of it (which is free as in beer). In any case, the steps below work for me on Ubuntu intrepid:
-
-
-/etc/apt/sources.list:
+Install virtualbox:
 {{{
-deb http://download.virtualbox.org/virtualbox/debian intrepid non-free
-}}}
-Execute:
-{{{
-$ wajig install virtualbox-2.1
+$ wajig install virtualbox-ose
 }}}
 Answer yes to install the kernel module, it should just work. Create the virtual image:
 {{{
