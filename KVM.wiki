@@ -13,3 +13,8 @@ Connecting to uri: qemu:///system
 ----------------------------------
 
 }}}
+
+Create the ubuntu image
+{{{
+sudo ubuntu-vm-builder kvm karmic --libvirt qemu:///system --mirror http://ubuntu.osuosl.org/ubuntu/
+}}}
