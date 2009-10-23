@@ -18,6 +18,30 @@ Create the ubuntu image
 {{{
 sudo ubuntu-vm-builder kvm karmic --libvirt qemu:///system --mirror http://ubuntu.osuosl.org/ubuntu/
 }}}
+It will fail with:
+{{{
+...
+2009-10-23 16:38:52,913 INFO    : Unmounting target filesystem
+2009-10-23 16:38:56,077 INFO    : Converting /tmp/vmbuilderKD5nML/disk0.img to qcow2, format ubuntu-kvm/disk0.qcow2
+libvir: Domain Config error : internal error no supported architecture for os type 'hvm'
+2009-10-23 16:39:01,403 INFO    : Cleaning up
+Traceback (most recent call last):
+  File "/usr/bin/ubuntu-vm-builder", line 28, in <module>
+    VMBuilder.run()
+  File "/usr/lib/python2.6/dist-packages/VMBuilder/__init__.py", line 65, in run
+    frontend.run()
+  File "/usr/lib/python2.6/dist-packages/VMBuilder/plugins/cli/__init__.py", line 68, in run
+    vm.create()
+  File "/usr/lib/python2.6/dist-packages/VMBuilder/vm.py", line 490, in create
+    self.deploy()
+  File "/usr/lib/python2.6/dist-packages/VMBuilder/vm.py", line 192, in deploy
+    if getattr(plugin, 'deploy')():
+  File "/usr/lib/python2.6/dist-packages/VMBuilder/plugins/libvirt/__init__.py", line 64, in deploy
+    self.conn.defineXML(vmxml)
+  File "/usr/lib/python2.6/dist-packages/libvirt.py", line 1107, in defineXML
+    if ret is None:raise libvirtError('virDomainDefineXML() failed', conn=self)
+libvirt.libvirtError: internal error no supported architecture for os type 'hvm'
+}}}
 
 == Utils ==
 
