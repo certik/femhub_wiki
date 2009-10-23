@@ -1,0 +1,15 @@
+#summary How to install KVM
+
+{{{
+sudo apt-get install kvm libvirt-bin ubuntu-vm-builder bridge-utils
+}}}
+Log out and in (add yourself into the admin group).
+
+Test that it works:
+{{{
+$ virsh -c qemu:///system list
+Connecting to uri: qemu:///system
+ Id Name                 State
+----------------------------------
+
+}}}
