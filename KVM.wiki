@@ -56,11 +56,14 @@ the console to complete the installation process.
 Then 
 
 {{{
-$ virsh net-list --all
-Connecting to uri: qemu:///system
-Name                 State      Autostart
------------------------------------------
-default              active     yes       
+$ virsh --connect qemu:///system
+[...]
+virsh # list
+ Id Name                 State
+----------------------------------
+  1 hardy                running
+
+
 }}}
 
 Connect to it:
