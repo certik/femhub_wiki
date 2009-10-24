@@ -16,9 +16,9 @@ Connecting to uri: qemu:///system
 
 
 Setup the bridge:
-{{{
+
 https://help.ubuntu.com/community/KVM/Networking
-}}}
+
 
 Create the image
 {{{
