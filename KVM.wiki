@@ -66,11 +66,14 @@ virsh # list
 
 }}}
 
-Connect to it:
+Connect to it (locally):
 {{{
 virt-viewer -c qemu:///system hardy
 }}}
-
+Connect to it (remotely):
+{{{
+virt-viewer -c qemu+ssh://raven/system hardy
+}}}
 More info at
 
 https://help.ubuntu.com/community/KVM/Managing
