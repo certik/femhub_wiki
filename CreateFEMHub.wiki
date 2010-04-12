@@ -14,12 +14,13 @@ export MAKE="make -j9"  # optional
 make
 }}}
 
+
 == new FEMhub release ==
 
 How to create a new release:
 
 {{{
-git clone git://github.com/certik/femhub.git
+git clone http://hpfem.org/git/femhub.git
 cd femhub
 cd spkg/standard/
 ./download_packages
@@ -53,3 +54,5 @@ local/bin/sage-win-copy
 }}}
 
 and run femhub by double-clicking on the ``femhub-windows`` (bat) file in the root directory.
+
+If "http" doesn't work on windows, clone from: git://github.com/certik/femhub.git
